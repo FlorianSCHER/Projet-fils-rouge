@@ -1,0 +1,278 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,300&display=swap');
+
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    background-color: #041821;
+    /* Couleur de fond sombre */
+    color: #fff;
+    /* Texte en blanc */
+    font-family: 'Montserrat', sans-serif;
+    /* Police principale */
+    line-height: 1.6;
+    /* Hauteur de ligne */
+}
+
+/* En-tête */
+header {
+    display: flex;
+    /* Alignement flexible */
+    justify-content: space-between;
+    /* Espace entre le titre et la navigation */
+    align-items: center;
+    /* Alignement vertical centré */
+    padding: 20px;
+    /* Espacement interne */
+    background-color: #0e1d24;
+    /* Même couleur que l'arrière-plan */
+}
+
+header h1.title {
+    font-family: 'Yeseva One', serif;
+    /* Police pour le titre */
+    color: white;
+    /* Couleur du texte */
+    font-size: 36px;
+    /* Taille du texte */
+}
+
+header nav a {
+    color: white;
+    /* Couleur des icônes */
+    margin-left: 20px;
+    /* Espacement entre les icônes */
+    font-size: 18px;
+    /* Taille des icônes */
+}
+
+/* Section principale */
+main {
+    margin: 50px auto;
+    /* Espacement autour de la section principale */
+}
+
+main h2 p.Yeseva.One {
+    font-family: 'Yeseva One', serif;
+    /* Police pour le sous-titre */
+    color: white;
+    /* Couleur du texte */
+    font-size: 48px;
+    /* Taille du sous-titre */
+    line-height: 1.2;
+    /* Espacement entre les lignes */
+}
+
+main h2 span {
+    color: #1bd79e;
+    /* Couleur verte pour "créative & engagée" */
+}
+
+main p {
+    margin: 20px 0;
+    /* Espacement autour du paragraphe */
+    color: #808080;
+    /* Texte gris foncé */
+    font-size: 18px;
+    /* Taille du texte */
+}
+
+/* Boutons de filtre */
+nav button {
+    background-color: #041821;
+    /* Fond transparent */
+    color: #fff;
+    padding: 10px 20px;
+    /* Espacement interne */
+    margin: 10px;
+    /* Espacement externe */
+    font-size: 16px;
+    /* Taille du texte */
+    cursor: pointer;
+    /* Curseur en forme de main */
+    transition: all 0.3s ease;
+    /* Effet de transition */
+}
+
+nav button:hover {
+    background-color: #32c766;
+    /* Fond vert au survol */
+    color: white;
+    /* Texte blanc au survol */
+}
+
+
+
+/* Pied de page */
+footer {
+    text-align: center;
+    /* Texte centré */
+    color: #808080;
+    /* Texte gris clair */
+    padding: 20px;
+    /* Espacement interne */
+    font-size: 14px;
+    /* Taille du texte */
+}
+
+/* Ordinateur - version par défaut */
+section.grid {
+    display: grid;
+    /* Utilisation de la grille CSS */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colonnes pour les images */
+    gap: 10px;
+    /* Espacement entre les images */
+    padding: 50px 100px;
+    /* Espacement interne pour centrer la grille */
+}
+
+section.grid img {
+    width: 100%;
+    /* L'image prend toute la largeur de sa cellule */
+    height: auto;
+    /* Hauteur automatique */
+    object-fit: cover;
+    /* L'image s'adapte à la taille de la cellule sans être déformée */
+    border-radius: 5px;
+    /* Coins légèrement arrondis */
+}
+
+/* Mobile - max 625px */
+@media (max-width: 625px) {
+
+    /* Centrer le header et ajouter un saut à la ligne avant les icônes */
+    header {
+        text-align: center;
+        /* Aligner le contenu du header au centre */
+        display: block;
+        /* Afficher le header en bloc */
+    }
+
+    header nav {
+        margin-top: 10px;
+        /* Ajout d'un espace entre le titre et les icônes */
+    }
+
+    header h1 {
+        font-size: 24px;
+        /* Réduire la taille du titre */
+    }
+
+    header nav a {
+        display: inline-block;
+        /* Les icônes sont maintenant en ligne, pas en flex */
+        margin-top: 10px;
+        /* Ajouter un espace avant les icônes */
+        margin-left: 5px;
+        /* Espacement entre les icônes */
+        font-size: 20px;
+        /* Agrandir légèrement les icônes pour mobile */
+    }
+
+    /* Redimensionner le texte */
+    main h2 {
+        font-size: 28px;
+        /* Taille du sous-titre plus petite pour mobile */
+    }
+
+    main p {
+        font-size: 16px;
+        /* Taille du texte ajustée */
+        padding: 10px;
+        /* Espacement interne ajusté */
+    }
+
+    /* Grille d'images : 3 colonnes de 3 images */
+    section.grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 colonnes pour la grille */
+        grid-template-rows: repeat(3, 1fr);
+        /* Limiter à 3 lignes */
+        gap: 5px;
+        /* Espacement réduit entre les images */
+        padding: 10px;
+        /* Réduction de l'espacement interne pour mobile */
+    }
+
+    /* Limiter l'affichage à 9 images */
+    section.grid img:nth-child(n+10) {
+        display: none;
+        /* Masquer les images au-delà de la 9ème */
+    }
+
+    /* Boutons de filtre adaptés au mobile */
+    nav button {
+        font-size: 14px;
+        /* Taille réduite des boutons */
+        padding: 8px 12px;
+        /* Espacement interne réduit */
+        margin: 5px;
+        /* Espacement externe réduit */
+    }
+
+    footer {
+        font-size: 12px;
+        /* Réduire la taille du texte du footer */
+    }
+}
+
+/* Tablette - max 768px */
+@media (min-width:625px) and (max-width: 768px) {
+
+    /* Ajuster le titre pour tablette */
+    header h1 {
+        font-size: 28px;
+        /* Réduire légèrement la taille du titre */
+    }
+
+    main h2 {
+        font-size: 32px;
+        /* Réduire la taille du sous-titre */
+    }
+
+    main p {
+        font-size: 16px;
+        /* Taille du texte adaptée à la tablette */
+    }
+
+    /* Grille d'images : 5 colonnes sur tablette, 15 images affichées */
+    section.grid {
+        grid-template-columns: repeat(5, 1fr);
+        /* 5 colonnes sur tablette */
+        gap: 10px;
+        /* Espacement entre les images */
+        padding: 30px;
+        /* Espacement interne autour de la grille */
+    }
+
+    section.grid img {
+        width: 100%;
+        /* Les images remplissent la largeur de leur cellule */
+        height: auto;
+        /* Hauteur ajustée automatiquement */
+        object-fit: cover;
+        /* Les images gardent leur proportion sans déformation */
+    }
+
+    /* Ajustement des boutons */
+    nav button {
+        font-size: 14px;
+        /* Taille des boutons ajustée */
+        padding: 8px 12px;
+        /* Espacement interne réduit */
+    }
+
+    /* Ajustement du pied de page */
+    footer {
+        font-size: 12px;
+        /* Texte du pied de page plus petit */
+    }
+}
