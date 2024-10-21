@@ -223,7 +223,7 @@ section.grid img {
 }
 
 /* Tablette - max 768px */
-@media (min-width:625) and (max-width: 768px) {
+@media (min-width:625px) and (max-width: 768px) {
 
     /* Ajuster le titre pour tablette */
     header h1 {
