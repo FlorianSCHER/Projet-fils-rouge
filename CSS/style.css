@@ -13,12 +13,6 @@
 body {
     background-color: #041821;
     /* Couleur de fond sombre */
-    color: #fff;
-    /* Texte en blanc */
-    font-family: 'Montserrat', sans-serif;
-    /* Police principale */
-    line-height: 1.6;
-    /* Hauteur de ligne */
 }
 
 /* En-tête */
@@ -38,9 +32,9 @@ header {
 header h1.title {
     font-family: 'Yeseva One', serif;
     /* Police pour le titre */
-    color: white;
+    color: #fff;
     /* Couleur du texte */
-    font-size: 36px;
+    font-size: 50px;
     /* Taille du texte */
 }
 
@@ -49,7 +43,7 @@ header nav a {
     /* Couleur des icônes */
     margin-left: 20px;
     /* Espacement entre les icônes */
-    font-size: 18px;
+    font-size: 25px;
     /* Taille des icônes */
 }
 
@@ -58,37 +52,41 @@ main {
     margin: 50px auto;
     /* Espacement autour de la section principale */
 }
-
-main h2 p.Yeseva.One {
+.Montserrat {
+    color: #fff;
+    /* Texte en blanc */
+    font-family: 'Montserrat', sans-serif;
+    /* Police principale */
+    line-height: 1.6;
+    /* Hauteur de ligne */
+    font-size: 75px
+    /* Taille du texte */
+}
+.Yeseva-One {
     font-family: 'Yeseva One', serif;
     /* Police pour le sous-titre */
     color: white;
     /* Couleur du texte */
-    font-size: 48px;
+    font-size: 25px;
     /* Taille du sous-titre */
     line-height: 1.2;
     /* Espacement entre les lignes */
 }
 
 main h2 span {
+   
+    display: block; 
+    /* Forcer le texte à s'afficher sur une nouvelle ligne */
     color: #1bd79e;
     /* Couleur verte pour "créative & engagée" */
 }
 
-main p {
-    margin: 20px 0;
-    /* Espacement autour du paragraphe */
-    color: #808080;
-    /* Texte gris foncé */
-    font-size: 18px;
-    /* Taille du texte */
-}
 
 /* Boutons de filtre */
 nav button {
     background-color: #041821;
     /* Fond transparent */
-    color: #fff;
+    color:#fff;
     padding: 10px 20px;
     /* Espacement interne */
     margin: 10px;
@@ -225,7 +223,7 @@ section.grid img {
 }
 
 /* Tablette - max 768px */
-@media (min-width:625px) and (max-width: 768px) {
+@media (min-width:625) and (max-width: 768px) {
 
     /* Ajuster le titre pour tablette */
     header h1 {
