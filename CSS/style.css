@@ -44,6 +44,7 @@ header nav a {
 /* Section principale */
 main {
     margin: 50px auto; /* Marges autour de la section principale et centrage horizontal */
+    padding: 25px 50px; /* Espacement interne pour centrer la grille */
 }
 
 /* Style des textes avec la classe Montserrat */
@@ -96,14 +97,12 @@ section.grid {
     display: grid; /* Utilisation de la grille CSS pour organiser les images */
     grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour les images par défaut */
     gap: 10px; /* Espacement entre les images */
-    padding: 50px 100px; /* Espacement interne pour centrer la grille */
 }
 
 section.grid img {
     width: 100%; /* L'image prend toute la largeur de sa cellule */
     height: auto; /* La hauteur est ajustée automatiquement */
     object-fit: cover; /* Maintient les proportions de l'image */
-    border-radius: 5px; /* Coins légèrement arrondis */
 }
 
 /* Media queries pour mobile - max 625px */
@@ -118,6 +117,8 @@ section.grid img {
     header nav {
         margin-top: 5px; /* Ajoute de l'espace entre le titre et les icônes */
         justify-content: center; /* Centre les boutons */
+        display: flex; /* Assure que les boutons sont en flex */
+        flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si nécessaire */
     }
 
     .title {
@@ -154,9 +155,20 @@ section.grid img {
 
     /* Ajustement des boutons pour mobile */
     nav button {
-        font-size: 14px; /* Taille de texte plus petite */
-        padding: 8px 12px; /* Réduction de l'espacement interne */
-        margin: 5px; /* Réduction des marges externes */
+        background-color: #041821; /* Fond du bouton identique au fond de la page */
+        color: #fff; /* Couleur du texte des boutons */
+        padding: 5px 10px; /* Espacement interne du bouton réduit */
+        margin: 5px; /* Réduit l'espacement entre les boutons */
+        font-size: 8px; /* Taille de texte plus petite */
+        cursor: pointer; /* Change le curseur en main survolée */
+        transition: all 0.3s ease; /* Animation de transition fluide */
+        flex: 1 1 auto; /* Permet aux boutons de s'ajuster en fonction de l'espace disponible */
+        max-width: 120px; /* Limite la largeur des boutons pour les petits écrans */
+    }
+
+    nav button:hover {
+        background-color: #32c766; /* Fond vert lors du survol */
+        color: white; /* Texte blanc lors du survol */
     }
 
     /* Ajustement du pied de page pour mobile */
