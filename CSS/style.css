@@ -1,151 +1,146 @@
 /* Importation des polices depuis Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap'); /* Police pour le titre */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Police pour le corps de texte */
 
-/* Réinitialisation des styles par défaut (Reset CSS) */
+/* Réinitialisation des styles par défaut */
 * {
-    margin: 0;     
-    padding: 0;
-    box-sizing: border-box; /* Assure que le padding et la bordure sont inclus dans la taille totale des éléments */
+    margin: 0;     /* Enlève les marges par défaut de tous les éléments */
+    padding: 0;    /* Enlève les espacements internes par défaut de tous les éléments */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la taille totale des éléments */
 }      
 
 /* Corps de la page */
 body {
-    background-color: #041821; /* Couleur de fond sombre */
+    background-color: #041821; /* Définit une couleur de fond sombre pour la page */
     font-family: 'Montserrat', sans-serif; /* Police par défaut pour le texte */
 }
 
-/* En-tête */
+/* En-tête de la page */
 header {
     display: flex; /* Utilise Flexbox pour aligner les éléments horizontalement */
-    justify-content: space-between; /* Espace égal entre le titre et la navigation */
-    align-items: center; /* Centre verticalement les éléments */
-    padding: 20px; /* Espacement interne */
-    background-color: #0e1d24; /* Couleur de fond de l'en-tête */
+    justify-content: space-between; /* Ajoute un espace égal entre les éléments enfants */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 20px; /* Espacement interne pour l’en-tête */
+    background-color: #0e1d24; /* Couleur de fond de l’en-tête */
 }
 
+/* Style du titre principal */
 .title {
-    font-family: 'Yeseva One', serif; /* Police personnalisée pour le titre */
-    color: #fff; /* Couleur du texte blanche */
-    font-size: 50px; /* Taille du texte */
+    font-family: 'Yeseva One', serif; /* Applique la police Yeseva One au titre */
+    color: #fff; /* Définit la couleur du texte en blanc */
+    font-size: 50px; /* Définit la taille du texte du titre */
 }
 
+/* Barre de navigation */
 nav {
-    display: flex; /* Utilisation de flexbox pour centrer les boutons */
-    justify-content: center; /* Centre les éléments horizontalement */
+    display: flex; /* Utilise Flexbox pour aligner les éléments dans la navigation */
+    justify-content: center; /* Centre les éléments de navigation horizontalement */
 }
 
+/* Liens dans la barre de navigation */
 header nav a {
-    color: white; /* Couleur blanche pour les icônes des liens */
-    margin-left: 20px; /* Espacement à gauche de chaque icône */
-    font-size: 25px; /* Taille des icônes */
+    color: white; /* Définit la couleur du texte des liens en blanc */
+    margin-left: 20px; /* Ajoute un espace à gauche de chaque lien */
+    font-size: 25px; /* Définit la taille du texte des liens */
 }
 
 /* Section principale */
 main {
-    margin: 50px auto; /* Marges autour de la section principale et centrage horizontal */
-    padding: 25px 50px; /* Espacement interne pour centrer la grille */
+    margin: 50px auto; /* Ajoute des marges en haut et en bas et centre horizontalement */
+    padding: 25px 50px; /* Ajoute un espacement interne */
 }
 
-/* Style des textes avec la classe Montserrat */
+/* Classe Montserrat pour textes principaux */
 .Montserrat {
-    color: #fff; /* Texte en blanc */
-    font-family: 'Montserrat', sans-serif; /* Police principale pour le texte */
-    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
-    font-size: 75px; /* Taille du texte */
+    color: #fff; /* Définit la couleur du texte en blanc */
+    font-family: 'Montserrat', sans-serif; /* Police Montserrat */
+    font-size: 75px; /* Définit la taille du texte */
 }
 
-/* Style des sous-titres avec la classe Yeseva-One */
+/* Classe Yeseva-One pour les sous-titres */
 .Yeseva-One {
-    font-family: 'Yeseva One', serif; /* Police pour le sous-titre */
-    color: white; /* Couleur du texte */
-    font-size: 25px; /* Taille du sous-titre */
-    line-height: 1.2; /* Espacement entre les lignes */
+    font-family: 'Yeseva One', serif; /* Police pour les sous-titres */
+    color: white; /* Définit la couleur du texte en blanc */
+    font-size: 25px; /* Définit la taille du sous-titre */
 }
 
-/* Styles pour tous les span */
+/* Style pour les balises span */
 span {
-    color: #1bd79e; /* Couleur verte pour tous les span */
+    color: #1bd79e; /* Définit une couleur verte pour les éléments span */
 }
 
-/* Boutons de filtre */
+/* Boutons dans la navigation */
 nav button {
-    background-color: #041821; /* Fond du bouton identique au fond de la page */
-    color: #fff; /* Couleur du texte des boutons */
-    padding: 10px 20px; /* Espacement interne du bouton */
-    margin: 10px; /* Espacement entre les boutons */
-    font-size: 16px; /* Taille du texte des boutons */
-    cursor: pointer; /* Change le curseur en main survolée */
-    transition: all 0.3s ease; /* Animation de transition fluide */
+    background-color: #041821; /* Définit la couleur de fond du bouton */
+    color: #fff; /* Définit la couleur du texte du bouton en blanc */
+    padding: 10px 20px; /* Ajoute un espacement interne horizontal et vertical */
+    margin: 10px; /* Ajoute un espacement autour du bouton */
+    font-size: 16px; /* Définit la taille du texte du bouton */
 }
 
+/* Changement de couleur des boutons au survol */
 nav button:hover {
-    background-color: #32c766; /* Fond vert lors du survol */
-    color: white; /* Texte blanc lors du survol */
+    background-color: #32c766; /* Change la couleur de fond en vert clair au survol */
+    color: white; /* Définit la couleur du texte en blanc */
 }
 
 /* Pied de page */
 footer {
     text-align: center; /* Centre le texte du pied de page */
-    color: #808080; /* Couleur du texte gris clair */
-    padding: 20px; /* Espacement interne */
-    font-size: 14px; /* Taille du texte du pied de page */
+    color: #808080; /* Définit une couleur grise claire pour le texte */
+    font-size: 14px; /* Définit la taille du texte du pied de page */
 }
 
 /* Grille d'images */
 section.grid {
-    display: grid; /* Utilisation de la grille CSS pour organiser les images */
-    grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour les images par défaut */
+    display: grid; /* Utilise la grille CSS pour organiser les images */
+    grid-template-columns: repeat(4, 1fr); /* Définit 4 colonnes de taille égale */
     gap: 10px; /* Espacement entre les images */
 }
 
 section.grid img {
-    width: 100%; /* L'image prend toute la largeur de sa cellule */
-    height: auto; /* La hauteur est ajustée automatiquement */
-    object-fit: cover; /* Maintient les proportions de l'image */
+    width: 100%; /* L’image occupe toute la largeur de sa cellule */
+    height: auto; /* Ajuste la hauteur automatiquement pour garder les proportions */
+    object-fit: cover; /* Coupe l'image pour remplir toute la cellule sans distorsion */
 }
 
-/* Media queries pour mobile - max 625px */
+/* Media query pour mobile (max-width: 625px) */
 @media (max-width: 625px) {
-    
-    /* Centrer le header et ajuster les icônes pour mobile */
     header {
-        text-align: center; /* Centre le contenu */
-        display: block; /* Affiche en bloc sur mobile */
+        text-align: center; /* Centre le contenu de l'en-tête */
+        display: block; /* Passe le header en bloc pour empiler les éléments */
     }
 
     header nav {
-        margin-top: 5px; /* Ajoute de l'espace entre le titre et les icônes */
-        justify-content: center; /* Centre les boutons */
-        display: flex; /* Assure que les boutons sont en flex */
-        flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si nécessaire */
+        margin-top: 5px; /* Ajoute un espace entre le titre et la navigation */
+        justify-content: center; /* Centre les boutons de navigation */
+        display: flex; /* Utilise Flexbox pour aligner les boutons */
+        flex-wrap: wrap; /* Passe les boutons à la ligne si nécessaire */
     }
 
     .title {
-        font-size: 24px; /* Réduit la taille du titre pour mobile */
+        font-size: 24px; /* Réduit la taille du titre sur mobile */
     }
 
     header nav a {
         display: inline-block; /* Affiche les icônes en ligne */
-        margin-top: 10px; /* Ajoute un espace vertical */
-        margin-left: 5px; /* Réduit l'espace entre les icônes */
-        font-size: 10px; /* Réduit la taille des icônes */
+        margin-top: 10px; /* Ajoute un espace vertical entre les icônes */
+        margin-left: 5px; /* Réduit l’espace entre les icônes */
+        font-size: 10px; /* Réduit la taille des icônes sur mobile */
     }
 
-    /* Réduction de la taille du texte et ajustement des marges pour mobile */
     .Montserrat {
-        font-size: 20px; /* Taille du texte plus petite sur mobile */
+        font-size: 20px; /* Taille réduite des textes principaux */
     }
 
     .Yeseva-One {
-        font-size: 14px; /* Ajuste la taille du texte pour les petits écrans */
+        font-size: 14px; /* Taille réduite des sous-titres */
         padding: 10px; /* Réduit les marges internes */
     }
 
-    /* Grille d'images sur 3 colonnes pour mobile */
     section.grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur mobile */
-        gap: 5px; /* Réduction de l'espacement entre les images */
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour la grille d'images sur mobile */
+        gap: 5px; /* Réduit l'espacement entre les images */
         padding: 10px; /* Réduction des marges internes */
     }
 
@@ -153,68 +148,42 @@ section.grid img {
         display: none; /* Cache les images au-delà de la 9ème pour mobile */
     }
 
-    /* Ajustement des boutons pour mobile */
     nav button {
-        background-color: #041821; /* Fond du bouton identique au fond de la page */
-        color: #fff; /* Couleur du texte des boutons */
-        padding: 5px 10px; /* Espacement interne du bouton réduit */
-        margin: 5px; /* Réduit l'espacement entre les boutons */
-        font-size: 8px; /* Taille de texte plus petite */
-        cursor: pointer; /* Change le curseur en main survolée */
-        transition: all 0.3s ease; /* Animation de transition fluide */
-        flex: 1 1 auto; /* Permet aux boutons de s'ajuster en fonction de l'espace disponible */
-        max-width: 120px; /* Limite la largeur des boutons pour les petits écrans */
+        padding: 5px 10px; /* Réduit l’espacement interne du bouton */
+        margin: 5px; /* Réduit l’espacement entre les boutons */
+        font-size: 8px; /* Taille réduite du texte du bouton */
     }
 
-    nav button:hover {
-        background-color: #32c766; /* Fond vert lors du survol */
-        color: white; /* Texte blanc lors du survol */
-    }
-
-    /* Ajustement du pied de page pour mobile */
     footer {
-        font-size: 12px; /* Taille de texte réduite */
+        font-size: 12px; /* Taille de texte réduite pour le pied de page */
     }
 }
 
-/* Media queries pour tablette - max 768px */
+/* Media query pour tablette (entre 625px et 768px) */
 @media (min-width: 625px) and (max-width: 768px) {
-    
-    /* Ajuste la taille du titre pour tablette */
     .title {
-        font-size: 30px; /* Taille intermédiaire entre bureau et mobile */
+        font-size: 30px; /* Taille intermédiaire du titre pour tablette */
     }
 
-    /* Ajuste la taille du sous-titre pour tablette */
     .Montserrat {
-        font-size: 25px; /* Réduction de la taille du sous-titre pour tablette */
+        font-size: 25px; /* Réduction de la taille du texte principal pour tablette */
     }
 
     .Yeseva-One {
-        font-size: 16px; /* Taille du texte standard pour tablette */
+        font-size: 16px; /* Taille de texte ajustée pour les sous-titres */
     }
 
-    /* Grille d'images sur 5 colonnes pour tablette */
     section.grid {
-        grid-template-columns: repeat(5, 1fr); /* 5 colonnes sur tablette */
-        gap: 10px; /* Espacement plus large entre les images */
-        padding: 30px; /* Marges internes adaptées */
+        grid-template-columns: repeat(5, 1fr); /* Grille d'images en 5 colonnes pour tablette */
+        padding: 30px; /* Marges internes adaptées pour tablette */
     }
 
-    section.grid img {
-        width: 100%; /* L'image prend toute la largeur de sa cellule */
-        height: auto; /* Hauteur automatique */
-        object-fit: cover; /* L'image conserve ses proportions */
-    }
-
-    /* Ajustement des boutons pour tablette */
     nav button {
-        font-size: 14px; /* Taille de texte plus petite */
-        padding: 8px 12px; /* Réduction de l'espacement interne */
+        font-size: 14px; /* Taille de texte réduite pour les boutons sur tablette */
+        padding: 8px 12px; /* Réduction de l’espacement interne */
     }
 
-    /* Ajustement du pied de page pour tablette */
     footer {
-        font-size: 12px; /* Taille de texte réduite */
+        font-size: 12px; /* Taille de texte réduite pour le pied de page sur tablette */
     }
 }
