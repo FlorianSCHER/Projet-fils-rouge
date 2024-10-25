@@ -3,10 +3,10 @@
 ### Réalisé par SCHER Florian
 
 ### Outils utilsé :
--HTML
--CSS
--Fleebox
--Grid
+- HTML
+- CSS
+- Fleebox
+- Grid
 
 ## 1) Partie HTML : 
 
